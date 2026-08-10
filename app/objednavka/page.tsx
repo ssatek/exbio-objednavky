@@ -34,6 +34,12 @@ const VARIETY_LIST = [...new Set(allProdukty.map((p) => p.variety).filter(Boolea
   a.localeCompare(b, "cs")
 );
 
+const SUGAR_TYPE_ORDER = ["suché", "polosuché", "polosladké", "sladké", "brut", "extra dry", ""];
+const SUGAR_TYPE_LABEL: Record<string, string> = { "": "bez označení" };
+
+const presentSugarTypes = new Set(allProdukty.map((p) => p.sugarType));
+const SUGAR_TYPE_LIST = SUGAR_TYPE_ORDER.filter((s) => presentSugarTypes.has(s));
+
 const COLOR_ORDER = ["bílé", "růžové", "červené", ""];
 const COLOR_DOT: Record<string, string> = {
   "bílé": "bg-yellow-200 ring-1 ring-inset ring-yellow-400/50",
@@ -70,6 +76,7 @@ export default function ObjednavkaPage() {
   const [note, setNote] = useState("");
   const [search, setSearch] = useState("");
   const [brandFilter, setBrandFilter] = useState<string>("Vše");
+  const [sugarTypeFilter, setSugarTypeFilter] = useState<string>("Vše");
   const [varietyFilter, setVarietyFilter] = useState<string>("");
   const [quantities, setQuantities] = useState<Record<string, number>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -78,15 +85,21 @@ export default function ObjednavkaPage() {
     const q = search.trim().toLowerCase();
     return allProdukty.filter((p) => {
       if (brandFilter !== "Vše" && p.brand !== brandFilter) return false;
+      if (sugarTypeFilter !== "Vše" && p.sugarType !== sugarTypeFilter) return false;
       if (varietyFilter && p.variety !== varietyFilter) return false;
       if (!q) return true;
       return (
         p.name.toLowerCase().includes(q) ||
         p.variety.toLowerCase().includes(q) ||
-        p.brand.toLowerCase().includes(q)
+        p.brand.toLowerCase().includes(q) ||
+        p.package.toLowerCase().includes(q) ||
+        p.sku.toLowerCase().includes(q) ||
+        p.catalogNumber.toLowerCase().includes(q) ||
+        p.quality.toLowerCase().includes(q) ||
+        p.sugarType.toLowerCase().includes(q)
       );
     });
-  }, [search, brandFilter, varietyFilter]);
+  }, [search, brandFilter, sugarTypeFilter, varietyFilter]);
 
   const groups = useMemo(() => groupByBrand(filtered), [filtered]);
 
@@ -198,6 +211,23 @@ export default function ObjednavkaPage() {
           ))}
         </div>
 
+        <div className="flex flex-wrap gap-2">
+          {["Vše", ...SUGAR_TYPE_LIST].map((sugarType) => (
+            <button
+              key={sugarType}
+              type="button"
+              onClick={() => setSugarTypeFilter(sugarType)}
+              className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+                sugarTypeFilter === sugarType
+                  ? "border-neutral-900 bg-neutral-900 text-white"
+                  : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-400"
+              }`}
+            >
+              {SUGAR_TYPE_LABEL[sugarType] ?? sugarType}
+            </button>
+          ))}
+        </div>
+
         <select
           value={varietyFilter}
           onChange={(e) => setVarietyFilter(e.target.value)}
@@ -240,9 +270,9 @@ export default function ObjednavkaPage() {
                         <p className={`truncate text-sm ${isSelected ? "font-medium text-neutral-900" : "text-neutral-800"}`}>
                           {p.name} <span className="text-neutral-400">({p.package})</span>
                         </p>
-                        {(p.sku || p.catalogNumber || p.quality || p.sugarType) && (
+                        {(p.brand || p.sku || p.catalogNumber || p.quality || p.sugarType) && (
                           <p className="truncate text-xs text-neutral-400">
-                            {[p.sku, p.catalogNumber, p.quality, p.sugarType].filter(Boolean).join(" · ")}
+                            {[p.brand, p.sku, p.catalogNumber, p.quality, p.sugarType].filter(Boolean).join(" · ")}
                           </p>
                         )}
                       </div>
@@ -293,9 +323,9 @@ export default function ObjednavkaPage() {
                     <p className="truncate text-sm text-neutral-800">
                       {product.name} <span className="text-neutral-400">({product.package})</span>
                     </p>
-                    {(product.sku || product.catalogNumber || product.quality || product.sugarType) && (
+                    {(product.brand || product.sku || product.catalogNumber || product.quality || product.sugarType) && (
                       <p className="truncate text-xs text-neutral-400">
-                        {[product.sku, product.catalogNumber, product.quality, product.sugarType]
+                        {[product.brand, product.sku, product.catalogNumber, product.quality, product.sugarType]
                           .filter(Boolean)
                           .join(" · ")}
                       </p>
