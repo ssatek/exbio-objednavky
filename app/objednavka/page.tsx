@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import produkty from "@/data/produkty.json";
 import { getDiscountRate, getDiscountedPrice, roundUp } from "@/lib/pricing";
@@ -140,6 +141,7 @@ export default function ObjednavkaPage() {
   if (status === "sent") {
     return (
       <main className="mx-auto min-h-screen max-w-lg bg-neutral-50 px-4 py-16 text-center text-neutral-900">
+        <Image src="/exbio-logo.png" alt="EXBIO" width={220} height={103} className="mx-auto mb-6 h-auto w-40" />
         <h1 className="mb-2 text-xl font-semibold">Objednávka odeslána</h1>
         <p className="text-neutral-500">Děkujeme, ozveme se s potvrzením.</p>
       </main>
@@ -147,12 +149,13 @@ export default function ObjednavkaPage() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl bg-neutral-50 px-4 py-12 text-neutral-900">
+    <main className="mx-auto min-h-screen max-w-2xl bg-neutral-50 px-4 py-8 text-neutral-900 sm:py-12">
+      <Image src="/exbio-logo.png" alt="EXBIO" width={220} height={103} className="mb-6 h-auto w-40" priority />
       <h1 className="mb-1 text-xl font-semibold">Nová objednávka</h1>
       <p className="mb-6 text-sm text-neutral-500">Objednávka výrobků pro zaměstnance EXBIO.</p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           <input
             required
             placeholder="Jméno a příjmení"
@@ -243,15 +246,15 @@ export default function ObjednavkaPage() {
                           </p>
                         )}
                       </div>
-                      <span className="w-24 shrink-0 text-right text-sm">
+                      <span className="w-14 shrink-0 text-right text-sm sm:w-24">
                         {p.price ? (
                           <>
-                            <span className="block text-xs text-neutral-400 line-through">
+                            <span className="hidden text-xs text-neutral-400 line-through sm:block">
                               {roundUp(p.price)} Kč
                             </span>
                             <span className="block font-medium text-neutral-700">
                               {getDiscountedPrice(p.price, p.brand)} Kč
-                              <span className="ml-1 text-xs font-normal text-emerald-600">
+                              <span className="ml-1 hidden text-xs font-normal text-emerald-600 sm:inline">
                                 -{getDiscountRate(p.brand) * 100}%
                               </span>
                             </span>
@@ -266,7 +269,7 @@ export default function ObjednavkaPage() {
                         placeholder="0"
                         value={quantities[p.sku] ?? ""}
                         onChange={(e) => setQuantity(p.sku, Number(e.target.value))}
-                        className={`w-16 shrink-0 rounded-lg border px-2 py-1.5 text-right text-sm ${
+                        className={`w-14 shrink-0 rounded-lg border px-2 py-2 text-right text-sm sm:w-16 sm:py-1.5 ${
                           isSelected ? "border-amber-400 bg-white font-medium" : "border-neutral-300"
                         }`}
                       />
@@ -298,10 +301,10 @@ export default function ObjednavkaPage() {
                       </p>
                     )}
                   </div>
-                  <span className="w-20 shrink-0 text-right text-sm">
+                  <span className="w-14 shrink-0 text-right text-sm sm:w-20">
                     {product.price ? (
                       <>
-                        <span className="block text-xs text-neutral-400 line-through">
+                        <span className="hidden text-xs text-neutral-400 line-through sm:block">
                           {roundUp(product.price)} Kč
                         </span>
                         <span className="block font-medium text-neutral-700">
@@ -317,16 +320,16 @@ export default function ObjednavkaPage() {
                     min={1}
                     value={quantity}
                     onChange={(e) => setQuantity(sku, Number(e.target.value))}
-                    className="w-16 shrink-0 rounded-lg border border-neutral-300 px-2 py-1.5 text-right text-sm"
+                    className="w-14 shrink-0 rounded-lg border border-neutral-300 px-2 py-2 text-right text-sm sm:w-16 sm:py-1.5"
                   />
-                  <span className="w-20 shrink-0 text-right text-sm font-medium text-neutral-800">
+                  <span className="hidden w-20 shrink-0 text-right text-sm font-medium text-neutral-800 sm:block">
                     {product.price ? `${getDiscountedPrice(product.price, product.brand) * quantity} Kč` : "—"}
                   </span>
                   <button
                     type="button"
                     onClick={() => removeItem(sku)}
                     title="Zrušit položku"
-                    className="shrink-0 px-1 text-neutral-400 hover:text-red-600"
+                    className="-m-1 shrink-0 rounded-lg p-2 text-neutral-400 transition-colors hover:bg-red-50 hover:text-red-600"
                   >
                     ✕
                   </button>
