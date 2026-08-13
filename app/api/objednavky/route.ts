@@ -6,6 +6,8 @@ import { Resend } from "resend";
 
 type OrderItem = { sku: string; quantity: number };
 
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const { employeeName, employeeEmail, note, items } = body as {
@@ -17,6 +19,10 @@ export async function POST(request: NextRequest) {
 
   if (!employeeName || !employeeEmail || !items?.length) {
     return NextResponse.json({ error: "Chybí povinné údaje." }, { status: 400 });
+  }
+
+  if (!EMAIL_PATTERN.test(employeeEmail)) {
+    return NextResponse.json({ error: "E-mail není ve správném formátu." }, { status: 400 });
   }
 
   const supabase = createAdminClient();

@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import produkty from "@/data/produkty.json";
 import { getDiscountRate, getDiscountedPrice, roundUp } from "@/lib/pricing";
+
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Produkt = {
   sku: string;
@@ -22,11 +24,12 @@ type Produkt = {
 const allProdukty = produkty as Produkt[];
 const produktBySku = new Map<string, Produkt>(allProdukty.map((p) => [p.sku, p]));
 
-const BRAND_ORDER = ["LAHOFER", "HANZEL", "WALDBERG", ""];
+const BRAND_ORDER = ["LAHOFER", "HANZEL", "WALDBERG", "ZNOVIN", ""];
 const BRAND_LABEL: Record<string, string> = {
   LAHOFER: "LAHOFER",
   HANZEL: "HANZEL",
   WALDBERG: "WALDBERG",
+  ZNOVIN: "ZNOVÍN",
   "": "Ostatní",
 };
 
@@ -80,6 +83,12 @@ export default function ObjednavkaPage() {
   const [varietyFilter, setVarietyFilter] = useState<string>("");
   const [quantities, setQuantities] = useState<Record<string, number>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [emailError, setEmailError] = useState(false);
+
+  useEffect(() => {
+    setEmployeeName(localStorage.getItem("exbio_employeeName") ?? "");
+    setEmployeeEmail(localStorage.getItem("exbio_employeeEmail") ?? "");
+  }, []);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -135,6 +144,11 @@ export default function ObjednavkaPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (selectedItems.length === 0) return;
+    if (!EMAIL_PATTERN.test(employeeEmail)) {
+      setEmailError(true);
+      return;
+    }
+    setEmailError(false);
     setStatus("sending");
 
     const res = await fetch("/api/objednavky", {
@@ -148,6 +162,10 @@ export default function ObjednavkaPage() {
       }),
     });
 
+    if (res.ok) {
+      localStorage.setItem("exbio_employeeName", employeeName);
+      localStorage.setItem("exbio_employeeEmail", employeeEmail);
+    }
     setStatus(res.ok ? "sent" : "error");
   }
 
@@ -176,14 +194,25 @@ export default function ObjednavkaPage() {
             onChange={(e) => setEmployeeName(e.target.value)}
             className="rounded-lg border border-neutral-300 px-3 py-2 text-sm"
           />
-          <input
-            required
-            type="email"
-            placeholder="E-mail"
-            value={employeeEmail}
-            onChange={(e) => setEmployeeEmail(e.target.value)}
-            className="rounded-lg border border-neutral-300 px-3 py-2 text-sm"
-          />
+          <div>
+            <input
+              required
+              type="email"
+              pattern={EMAIL_PATTERN.source}
+              placeholder="E-mail"
+              value={employeeEmail}
+              onChange={(e) => {
+                setEmployeeEmail(e.target.value);
+                if (emailError) setEmailError(false);
+              }}
+              className={`w-full rounded-lg border px-3 py-2 text-sm ${
+                emailError ? "border-red-500" : "border-neutral-300"
+              }`}
+            />
+            {emailError && (
+              <p className="mt-1 text-xs text-red-600">Zadejte e-mail ve správném formátu.</p>
+            )}
+          </div>
         </div>
 
         <input
