@@ -224,9 +224,9 @@ export default function ObjednavkaPage() {
         />
 
         <div className="flex flex-wrap gap-2">
-          {["Vše", ...BRAND_ORDER.filter((b) => b !== "")].map((brand) => (
+          {["Vše", ...BRAND_ORDER].map((brand) => (
             <button
-              key={brand}
+              key={brand || "ostatni"}
               type="button"
               onClick={() => setBrandFilter(brand)}
               className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
@@ -235,7 +235,7 @@ export default function ObjednavkaPage() {
                   : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-400"
               }`}
             >
-              {brand}
+              {brand === "Vše" ? brand : BRAND_LABEL[brand]}
             </button>
           ))}
         </div>
