@@ -429,6 +429,19 @@
     "quality": "jakostní"
   },
   {
+    "sku": "LAH.0568",
+    "catalogNumber": "10625LA",
+    "name": "Frizzante - LAHOFER 2025",
+    "package": "0,75 l",
+    "price": 139.0,
+    "color": "bílé",
+    "variety": "Muškát žlutý",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "polosuché",
+    "quality": "moravské zemské"
+  },
+  {
     "sku": "LAH.0578",
     "catalogNumber": "10725LA",
     "name": "Frizzante Rosé - LAHOFER 2025",
@@ -1064,19 +1077,6 @@
     "brand": "ZNOVIN",
     "sugarType": "polosuché",
     "quality": "pozdní sběr"
-  },
-  {
-    "sku": "LAH.0411",
-    "catalogNumber": "13221LA",
-    "name": "Pálava - 2021 m.z.v. WAVE Kvevri",
-    "package": "0,75 l",
-    "price": 250.0,
-    "color": "bílé",
-    "variety": "Pálava",
-    "vintage": 2021,
-    "brand": "LAHOFER",
-    "sugarType": "suché",
-    "quality": "naturální víno"
   },
   {
     "sku": "LAH.0426",
