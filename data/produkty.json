@@ -637,6 +637,19 @@
     "quality": ""
   },
   {
+    "sku": "LAH.0588",
+    "catalogNumber": "9825/2",
+    "name": "LAHOFER Charmat 2025",
+    "package": "0,75 l",
+    "price": 195.0,
+    "color": "bílé",
+    "variety": "Cuvée",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "",
+    "quality": "šumivé"
+  },
+  {
     "sku": "LAH.0579",
     "catalogNumber": "1225WB",
     "name": "LAHOFER Charmat Rosé 2025",
@@ -2221,19 +2234,6 @@
     "brand": "LAHOFER",
     "sugarType": "suché",
     "quality": "moravské zemské"
-  },
-  {
-    "sku": "ZNO.0445",
-    "catalogNumber": "2402",
-    "name": "Tramín červený - Ještěrka zelená",
-    "package": "0,75 l",
-    "price": 180.0,
-    "color": "bílé",
-    "variety": "Tramín červený",
-    "vintage": 2022,
-    "brand": "ZNOVIN",
-    "sugarType": "polosladké",
-    "quality": "pozdní sběr"
   },
   {
     "sku": "LAH.0479",
