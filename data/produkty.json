@@ -858,19 +858,6 @@
     "quality": "pozdní sběr"
   },
   {
-    "sku": "LAH.0481",
-    "catalogNumber": "6923LA",
-    "name": "Müller Thurgau - U Hájku 2023 v.b.",
-    "package": "0,75 l",
-    "price": 210.0,
-    "color": "bílé",
-    "variety": "Müller Thurgau",
-    "vintage": 2023,
-    "brand": "LAHOFER",
-    "sugarType": "sladké",
-    "quality": "výběr z bobulí"
-  },
-  {
     "sku": "LAH.0449",
     "catalogNumber": "422LA",
     "name": "Müller Thurgau - Vinohrady 2022 kab.",
@@ -1154,6 +1141,19 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "polosladké",
+    "quality": "pozdní sběr"
+  },
+  {
+    "sku": "HAN.0283",
+    "catalogNumber": "5925HA",
+    "name": "Rotgipfler - Volné pole 2025 p.s.",
+    "package": "0,75 l",
+    "price": 205.0,
+    "color": "bílé",
+    "variety": "Rotgipfler",
+    "vintage": 2025,
+    "brand": "HANZEL",
+    "sugarType": "suché",
     "quality": "pozdní sběr"
   },
   {
@@ -2075,19 +2075,6 @@
     "color": "růžové",
     "variety": "Svatovavřinecké",
     "vintage": 2024,
-    "brand": "LAHOFER",
-    "sugarType": "polosladké",
-    "quality": "kabinetní"
-  },
-  {
-    "sku": "LAH.0559.ML",
-    "catalogNumber": "ML7525LA",
-    "name": "Svatovavřinecké rosé - Volné pole 2025 m.z.v. - 0,187l",
-    "package": "0,187 l",
-    "price": 29.0,
-    "color": "růžové",
-    "variety": "Svatovavřinecké",
-    "vintage": 2025,
     "brand": "LAHOFER",
     "sugarType": "polosladké",
     "quality": "kabinetní"
