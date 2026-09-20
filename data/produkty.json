@@ -15,7 +15,7 @@
   {
     "sku": "LAH.ADVE",
     "catalogNumber": "ADVELA",
-    "name": "Adventní 2025",
+    "name": "Adventní 2026",
     "package": "MULTIPACK 24",
     "price": 1390.0,
     "color": "",
@@ -907,6 +907,19 @@
     "vintage": 2023,
     "brand": "ZNOVIN",
     "sugarType": "polosladké",
+    "quality": "pozdní sběr"
+  },
+  {
+    "sku": "ZNO.0514",
+    "catalogNumber": "5377",
+    "name": "Müller Thurgau z Pekla",
+    "package": "0,75 l",
+    "price": 230.0,
+    "color": "bílé",
+    "variety": "Müller Thurgau",
+    "vintage": 2025,
+    "brand": "ZNOVIN",
+    "sugarType": "polosuché",
     "quality": "pozdní sběr"
   },
   {
