@@ -442,6 +442,19 @@
     "quality": "moravské zemské"
   },
   {
+    "sku": "LAH.0599",
+    "catalogNumber": "10125LA",
+    "name": "Frizzante - LAHOFER 2025",
+    "package": "0,75 l",
+    "price": 139.0,
+    "color": "bílé",
+    "variety": "Muškát moravský",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "polosladké",
+    "quality": "perlivé"
+  },
+  {
     "sku": "LAH.0578",
     "catalogNumber": "10725LA",
     "name": "Frizzante Rosé - LAHOFER 2025",
@@ -624,8 +637,8 @@
     "quality": "pozdní sběr"
   },
   {
-    "sku": "ZNO.0430",
-    "catalogNumber": "ZKKV2025",
+    "sku": "ZNO.0515",
+    "catalogNumber": "ZKKV2026",
     "name": "Květinová kolekce 2025",
     "package": "",
     "price": 650.0,
