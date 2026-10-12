@@ -183,7 +183,12 @@ export default function ObjednavkaPage() {
     <main className="mx-auto min-h-screen max-w-2xl bg-neutral-50 px-4 py-8 text-neutral-900 sm:py-12">
       <Image src="/exbio-logo.png" alt="EXBIO" width={220} height={103} className="mb-6 h-auto w-40" priority />
       <h1 className="mb-1 text-xl font-semibold">Nová objednávka</h1>
-      <p className="mb-6 text-sm text-neutral-500">Objednávka výrobků pro zaměstnance EXBIO.</p>
+      <p className="mb-6 text-sm text-neutral-500">
+        Objednávka výrobků pro zaměstnance EXBIO.{" "}
+        <a href="/manual-objednavky.pdf" target="_blank" rel="noopener" className="underline hover:text-neutral-800">
+          Návod k objednávce (PDF)
+        </a>
+      </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">

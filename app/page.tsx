@@ -15,6 +15,14 @@ export default function Home() {
       >
         Nová objednávka
       </Link>
+      <a
+        href="/manual-objednavky.pdf"
+        target="_blank"
+        rel="noopener"
+        className="mt-4 text-sm text-neutral-500 underline hover:text-neutral-800"
+      >
+        Návod k objednávce a platbě (PDF)
+      </a>
     </main>
   );
 }
