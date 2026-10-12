@@ -36,7 +36,7 @@
     "vintage": 2023,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "HAN.0244",
@@ -101,7 +101,7 @@
     "vintage": 2024,
     "brand": "ZNOVIN",
     "sugarType": "polosuché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "ZNO.0353",
@@ -182,19 +182,6 @@
     "quality": "pozdní sběr"
   },
   {
-    "sku": "HAN.0255",
-    "catalogNumber": "3223HA",
-    "name": "Chardonnay - U sv. Urbana 2023 p.s.",
-    "package": "0,75 l",
-    "price": 205.0,
-    "color": "bílé",
-    "variety": "Chardonnay",
-    "vintage": 2023,
-    "brand": "HANZEL",
-    "sugarType": "suché",
-    "quality": "pozdní sběr"
-  },
-  {
     "sku": "HAN.0280",
     "catalogNumber": "4425HA",
     "name": "Chardonnay - U sv. Urbana 2025 p.s.",
@@ -205,6 +192,19 @@
     "vintage": 2025,
     "brand": "HANZEL",
     "sugarType": "polosladké",
+    "quality": "pozdní sběr"
+  },
+  {
+    "sku": "HAN.0274",
+    "catalogNumber": "3224HA",
+    "name": "Chardonnay - Volné pole 2024 p.s.",
+    "package": "0,75 l",
+    "price": 205.0,
+    "color": "bílé",
+    "variety": "Chardonnay",
+    "vintage": 2024,
+    "brand": "HANZEL",
+    "sugarType": "suché",
     "quality": "pozdní sběr"
   },
   {
@@ -229,19 +229,6 @@
     "color": "bílé",
     "variety": "Cuvée",
     "vintage": 2024,
-    "brand": "LAHOFER",
-    "sugarType": "suché",
-    "quality": "VOC"
-  },
-  {
-    "sku": "LAH.0565",
-    "catalogNumber": "4725LA",
-    "name": "Cuvée Rajská  - Rajská vinice 2025 VOC",
-    "package": "0,75 l",
-    "price": 250.0,
-    "color": "bílé",
-    "variety": "Sauvignon",
-    "vintage": 2025,
     "brand": "LAHOFER",
     "sugarType": "suché",
     "quality": "VOC"
@@ -426,7 +413,7 @@
     "vintage": 2025,
     "brand": "ZNOVIN",
     "sugarType": "suché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "LAH.0568",
@@ -542,7 +529,7 @@
     "variety": "Hibernal",
     "vintage": 2025,
     "brand": "ZNOVIN",
-    "sugarType": "",
+    "sugarType": "polosuché",
     "quality": "výběr z hroznů"
   },
   {
@@ -582,7 +569,7 @@
     "vintage": 2025,
     "brand": "ZNOVIN",
     "sugarType": "polosladké",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "30.002.10",
@@ -790,7 +777,7 @@
     "vintage": 2024,
     "brand": "ZNOVIN",
     "sugarType": "polosuché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "LAH.0519",
@@ -881,7 +868,7 @@
     "vintage": 2022,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "LAH.0487.ML",
@@ -907,7 +894,7 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "ZNO.0412",
@@ -1007,7 +994,7 @@
     "package": "0,75 l",
     "price": 160.0,
     "color": "červené",
-    "variety": "Pinot",
+    "variety": "Pinot Meunier",
     "vintage": 2021,
     "brand": "WALDBERG",
     "sugarType": "suché",
@@ -1196,6 +1183,19 @@
     "quality": "pozdní sběr"
   },
   {
+    "sku": "LAH.0569",
+    "catalogNumber": "5425LA",
+    "name": "Rulandské bílé - Dolina 2025 p.s.",
+    "package": "0,75 l",
+    "price": 190.0,
+    "color": "bílé",
+    "variety": "Rulandské bílé",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "pozdní sběr"
+  },
+  {
     "sku": "ZNO.0458",
     "catalogNumber": "4311",
     "name": "Rulandské bílé - Ještěrka zelená",
@@ -1218,19 +1218,6 @@
     "variety": "Rulandské bílé",
     "vintage": 2024,
     "brand": "HANZEL",
-    "sugarType": "suché",
-    "quality": "pozdní sběr"
-  },
-  {
-    "sku": "LAH.0533",
-    "catalogNumber": "3124LA",
-    "name": "Rulandské bílé - Waldberg 2024 p.s.",
-    "package": "0,75 l",
-    "price": 190.0,
-    "color": "bílé",
-    "variety": "Rulandské bílé",
-    "vintage": 2024,
-    "brand": "LAHOFER",
     "sugarType": "suché",
     "quality": "pozdní sběr"
   },
@@ -1337,19 +1324,6 @@
     "brand": "ZNOVIN",
     "sugarType": "suché",
     "quality": "výběr z hroznů"
-  },
-  {
-    "sku": "HAN.0099",
-    "catalogNumber": "8115HA",
-    "name": "Rulandské šedé - Lampelberg 2015 v.c.",
-    "package": "0,375 l",
-    "price": 150.0,
-    "color": "bílé",
-    "variety": "Rulandské šedé",
-    "vintage": 2015,
-    "brand": "HANZEL",
-    "sugarType": "sladké",
-    "quality": "výběr z cibéb"
   },
   {
     "sku": "LAH.0353",
@@ -1609,7 +1583,7 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "ZNO.0480",
@@ -1664,14 +1638,14 @@
     "quality": "naturální víno"
   },
   {
-    "sku": "ZNO.0399",
-    "catalogNumber": "2356",
+    "sku": "ZNO.0516",
+    "catalogNumber": "5351",
     "name": "Ryzlink vlašský - Rosnička zelená",
     "package": "0,75 l",
     "price": 180.0,
     "color": "bílé",
     "variety": "Ryzlink vlašský",
-    "vintage": 2022,
+    "vintage": 2025,
     "brand": "ZNOVIN",
     "sugarType": "suché",
     "quality": "pozdní sběr"
@@ -2077,7 +2051,7 @@
     "vintage": 2020,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "LAH.0526",
@@ -2090,7 +2064,7 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "polosladké",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "ZNO.0429",
@@ -2171,24 +2145,11 @@
     "quality": "pozdní sběr"
   },
   {
-    "sku": "LAH.0321",
-    "catalogNumber": "31919LA",
-    "name": "Syrah - 2019 odrůdové",
-    "package": "0,75 l",
-    "price": 890.0,
-    "color": "červené",
-    "variety": "Syrah",
-    "vintage": 2019,
-    "brand": "LAHOFER",
-    "sugarType": "suché",
-    "quality": "odrůdové"
-  },
-  {
-    "sku": "LAH.0301",
+    "sku": "LAH.0378.BRQ",
     "catalogNumber": "12018LA",
-    "name": "Syrah - Francie - 2018",
+    "name": "Syrah Francie 2018 odrůdové",
     "package": "0,75 l",
-    "price": 180.0,
+    "price": 490.0,
     "color": "červené",
     "variety": "Syrah",
     "vintage": 2018,
@@ -2285,20 +2246,7 @@
     "vintage": 2024,
     "brand": "ZNOVIN",
     "sugarType": "suché",
-    "quality": "jakostní"
-  },
-  {
-    "sku": "LAH.0525",
-    "catalogNumber": "7924LA",
-    "name": "Veltlínské zelené - Lampelberg 2024 VOC",
-    "package": "0,75 l",
-    "price": 195.0,
-    "color": "bílé",
-    "variety": "Veltlínské zelené",
-    "vintage": 2024,
-    "brand": "LAHOFER",
-    "sugarType": "suché",
-    "quality": "VOC"
+    "quality": "jakostní víno"
   },
   {
     "sku": "ZNO.0467",
@@ -2376,7 +2324,20 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "suché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
+  },
+  {
+    "sku": "LAH.0566",
+    "catalogNumber": "9225LA",
+    "name": "Veltlínské zelené - Volné pole 2025 VOC",
+    "package": "0,75 l",
+    "price": 195.0,
+    "color": "bílé",
+    "variety": "Veltlínské zelené",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "VOC"
   },
   {
     "sku": "LAH.0425",
@@ -2493,7 +2454,7 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "polosuché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "ZNO.0494",
@@ -2597,7 +2558,7 @@
     "vintage": 2021,
     "brand": "ZNOVIN",
     "sugarType": "suché",
-    "quality": "jakostní"
+    "quality": "jakostní víno"
   },
   {
     "sku": "LAH.0463",
@@ -2636,7 +2597,7 @@
     "vintage": 2024,
     "brand": "HANZEL",
     "sugarType": "polosuché",
-    "quality": "kabinetní"
+    "quality": "kabinetní víno"
   },
   {
     "sku": "30.002.6",
