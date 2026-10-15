@@ -442,19 +442,6 @@
     "quality": "perlivé"
   },
   {
-    "sku": "LAH.0578",
-    "catalogNumber": "10725LA",
-    "name": "Frizzante Rosé - LAHOFER 2025",
-    "package": "0,75 l",
-    "price": 139.0,
-    "color": "růžové",
-    "variety": "Cuvée",
-    "vintage": 2025,
-    "brand": "LAHOFER",
-    "sugarType": "polosladké",
-    "quality": "perlivé"
-  },
-  {
     "sku": "LAH.0534.PL",
     "catalogNumber": "PL3724LA",
     "name": "Frizzante Svatovavřinecké rosé 2024 m.z.v. - 0,25l",
@@ -979,7 +966,7 @@
     "catalogNumber": "4311",
     "name": "Pekelná kolekce vín",
     "package": "",
-    "price": 810.0,
+    "price": 888.0,
     "color": "",
     "variety": "",
     "vintage": null,
