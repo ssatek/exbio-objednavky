@@ -7,13 +7,10 @@ export type OrderExcelItem = {
   brand: string;
 };
 
-// Brandy vyráběné/skladované v hlavním skladu 1LA. Cokoli jiného v objednávce
-// (i jedna položka) posílá celou objednávku na sklad 4TR.
-const CORE_BRANDS = new Set(["LAHOFER", "HANZEL", "WALDBERG"]);
+// Objednávky EXBIO se vždy vyskladňují ze skladu 4TR, bez ohledu na brand položek.
+const IDU_STORE = "4TR - HV";
 
 export async function buildOrderExcel(items: OrderExcelItem[]): Promise<Buffer> {
-  const iduStore = items.every((item) => CORE_BRANDS.has(item.brand)) ? "1LA - HV" : "4TR - HV";
-
   const workbook = new ExcelJS.Workbook();
   const sheet = workbook.addWorksheet("Objednávka");
 
@@ -32,7 +29,7 @@ export async function buildOrderExcel(items: OrderExcelItem[]): Promise<Buffer> 
   sheet.autoFilter = { from: { row: 2, column: 1 }, to: { row: 2, column: 6 } };
 
   for (const item of items) {
-    sheet.addRow(["", item.sku, "", item.name, item.quantity, iduStore]);
+    sheet.addRow(["", item.sku, "", item.name, item.quantity, IDU_STORE]);
   }
 
   sheet.getColumn(5).numFmt = "0.00";
