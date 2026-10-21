@@ -221,6 +221,19 @@
     "quality": "šumivé"
   },
   {
+    "sku": "LAH.0603",
+    "catalogNumber": "1526LA",
+    "name": "Charmat Fresh 2026",
+    "package": "0,75 l",
+    "price": 175.0,
+    "color": "bílé",
+    "variety": "Müller Thurgau",
+    "vintage": 2026,
+    "brand": "LAHOFER",
+    "sugarType": "extra dry",
+    "quality": "šumivé"
+  },
+  {
     "sku": "LAH.0524",
     "catalogNumber": "9424LA",
     "name": "Cuvée Rajská  - Rajská vinice 2024 VOC",
@@ -442,6 +455,19 @@
     "quality": "perlivé"
   },
   {
+    "sku": "LAH.0602",
+    "catalogNumber": "426LA",
+    "name": "Frizzante Fresh 2026",
+    "package": "0,75 l",
+    "price": 139.0,
+    "color": "bílé",
+    "variety": "Muškát moravský",
+    "vintage": 2026,
+    "brand": "LAHOFER",
+    "sugarType": "polosuché",
+    "quality": "perlivé"
+  },
+  {
     "sku": "LAH.0534.PL",
     "catalogNumber": "PL3724LA",
     "name": "Frizzante Svatovavřinecké rosé 2024 m.z.v. - 0,25l",
@@ -546,6 +572,19 @@
     "quality": "výběr z hroznů"
   },
   {
+    "sku": "ZNO.0519",
+    "catalogNumber": "novinka",
+    "name": "Hroznový nápoj sycený",
+    "package": "",
+    "price": 119.0,
+    "color": "",
+    "variety": "",
+    "vintage": null,
+    "brand": "ZNOVIN",
+    "sugarType": "",
+    "quality": "mošt"
+  },
+  {
     "sku": "ZNO.0474",
     "catalogNumber": "5310",
     "name": "Irsai Oliver",
@@ -624,6 +663,19 @@
     "quality": ""
   },
   {
+    "sku": "LAH.0600",
+    "catalogNumber": "326LA",
+    "name": "LAHOFER 26 m.z.v.",
+    "package": "0,75 l",
+    "price": 130.0,
+    "color": "bílé",
+    "variety": "Müller Thurgau",
+    "vintage": 2026,
+    "brand": "LAHOFER",
+    "sugarType": "polosuché",
+    "quality": "moravské zemské"
+  },
+  {
     "sku": "LAH.0588",
     "catalogNumber": "9825/2",
     "name": "LAHOFER Charmat 2025",
@@ -658,6 +710,19 @@
     "color": "růžové",
     "variety": "Svatovavřinecké",
     "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "polosladké",
+    "quality": "moravské zemské"
+  },
+  {
+    "sku": "LAH.0601",
+    "catalogNumber": "2026LA",
+    "name": "LAHOFERka 26 m.z.v.",
+    "package": "0,75 l",
+    "price": 140.0,
+    "color": "růžové",
+    "variety": "Svatovavřinecké",
+    "vintage": 2026,
     "brand": "LAHOFER",
     "sugarType": "polosladké",
     "quality": "moravské zemské"
@@ -702,6 +767,19 @@
     "quality": "moravské zemské"
   },
   {
+    "sku": "HAN.0285",
+    "catalogNumber": "726HA",
+    "name": "Martin Bílý 2026 m.z.v.",
+    "package": "0,75 l",
+    "price": 130.0,
+    "color": "bílé",
+    "variety": "Hibernal",
+    "vintage": 2026,
+    "brand": "HANZEL",
+    "sugarType": "polosladké",
+    "quality": "moravské zemské"
+  },
+  {
     "sku": "HAN.0277",
     "catalogNumber": "1525HA",
     "name": "Martin Růžový 2025 m.z.v.",
@@ -710,6 +788,19 @@
     "color": "růžové",
     "variety": "Modrý Portugal",
     "vintage": 2025,
+    "brand": "HANZEL",
+    "sugarType": "polosuché",
+    "quality": "moravské zemské"
+  },
+  {
+    "sku": "HAN.0286",
+    "catalogNumber": "1126HA",
+    "name": "Martin Růžový 2026 m.z.v.",
+    "package": "0,75 l",
+    "price": 140.0,
+    "color": "růžové",
+    "variety": "Modrý Portugal",
+    "vintage": 2026,
     "brand": "HANZEL",
     "sugarType": "polosuché",
     "quality": "moravské zemské"
@@ -937,7 +1028,7 @@
   },
   {
     "sku": "ZNO.0459",
-    "catalogNumber": "4311",
+    "catalogNumber": "ZPKV 2026",
     "name": "Pekelná kolekce vín",
     "package": "",
     "price": 888.0,
@@ -1012,6 +1103,32 @@
     "brand": "LAHOFER",
     "sugarType": "suché",
     "quality": "perlivé"
+  },
+  {
+    "sku": "ZNO.0518",
+    "catalogNumber": "ročník 2026",
+    "name": "První letošní Sauvignon 2025",
+    "package": "0,75 l",
+    "price": 99.0,
+    "color": "bílé",
+    "variety": "Sauvignon",
+    "vintage": 2026,
+    "brand": "ZNOVIN",
+    "sugarType": "",
+    "quality": "moravské zemské"
+  },
+  {
+    "sku": "ZNO.0517",
+    "catalogNumber": "ročník 2026",
+    "name": "První letošní Svatovavřinecké rosé",
+    "package": "0,75 l",
+    "price": 99.0,
+    "color": "růžové",
+    "variety": "Svatovavřinecké",
+    "vintage": 2026,
+    "brand": "ZNOVIN",
+    "sugarType": "",
+    "quality": "moravské zemské"
   },
   {
     "sku": "ZNO.0444",
