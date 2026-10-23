@@ -2548,6 +2548,19 @@
     "quality": "pozdní sběr"
   },
   {
+    "sku": "ZNO.0520",
+    "catalogNumber": "5340",
+    "name": "Vetlínské zelené - Ledňáček",
+    "package": "0,75 l",
+    "price": 180.0,
+    "color": "bílé",
+    "variety": "Veltlínské zelené",
+    "vintage": 2025,
+    "brand": "ZNOVIN",
+    "sugarType": "suché",
+    "quality": "pozdní sběr"
+  },
+  {
     "sku": "ZNO.0462",
     "catalogNumber": "ZKLP",
     "name": "Vína lehká jako pírko",
