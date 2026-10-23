@@ -573,7 +573,7 @@
   },
   {
     "sku": "ZNO.0519",
-    "catalogNumber": "novinka",
+    "catalogNumber": "5394",
     "name": "Hroznový nápoj sycený",
     "package": "",
     "price": 119.0,
@@ -1106,20 +1106,20 @@
   },
   {
     "sku": "ZNO.0518",
-    "catalogNumber": "ročník 2026",
-    "name": "První letošní Sauvignon 2025",
+    "catalogNumber": "6601",
+    "name": "První letošní Sauvignon 2026",
     "package": "0,75 l",
     "price": 99.0,
     "color": "bílé",
     "variety": "Sauvignon",
     "vintage": 2026,
     "brand": "ZNOVIN",
-    "sugarType": "",
+    "sugarType": "suché",
     "quality": "moravské zemské"
   },
   {
     "sku": "ZNO.0517",
-    "catalogNumber": "ročník 2026",
+    "catalogNumber": "6603",
     "name": "První letošní Svatovavřinecké rosé",
     "package": "0,75 l",
     "price": 99.0,
@@ -1127,7 +1127,7 @@
     "variety": "Svatovavřinecké",
     "vintage": 2026,
     "brand": "ZNOVIN",
-    "sugarType": "",
+    "sugarType": "polosuché",
     "quality": "moravské zemské"
   },
   {
