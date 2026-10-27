@@ -575,11 +575,11 @@
     "sku": "ZNO.0519",
     "catalogNumber": "5394",
     "name": "Hroznový nápoj sycený",
-    "package": "",
+    "package": "0,75 l",
     "price": 119.0,
     "color": "",
     "variety": "",
-    "vintage": null,
+    "vintage": 2025,
     "brand": "ZNOVIN",
     "sugarType": "",
     "quality": "mošt"
@@ -806,6 +806,19 @@
     "quality": "moravské zemské"
   },
   {
+    "sku": "LAH.0595",
+    "catalogNumber": "11125LA",
+    "name": "Merlot - Francie 2025 odrůdové",
+    "package": "0,75 l",
+    "price": 180.0,
+    "color": "červené",
+    "variety": "Merlot",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "odrůdové"
+  },
+  {
     "sku": "ZNO.0394",
     "catalogNumber": "0380",
     "name": "Muškát Ottonel",
@@ -845,19 +858,6 @@
     "quality": "jakostní víno"
   },
   {
-    "sku": "LAH.0519",
-    "catalogNumber": "1424LA",
-    "name": "Muškát moravský - Olbramovická hora 2024 p.s.",
-    "package": "0,75 l",
-    "price": 190.0,
-    "color": "bílé",
-    "variety": "Muškát moravský",
-    "vintage": 2024,
-    "brand": "LAHOFER",
-    "sugarType": "polosladké",
-    "quality": "pozdní sběr"
-  },
-  {
     "sku": "ZNO.0463",
     "catalogNumber": "5318",
     "name": "Muškát moravský - Pírko",
@@ -869,6 +869,19 @@
     "brand": "ZNOVIN",
     "sugarType": "suché",
     "quality": "moravské zemské"
+  },
+  {
+    "sku": "LAH.0556",
+    "catalogNumber": "2225LA",
+    "name": "Muškát moravský - Volné pole 2025 p.s.",
+    "package": "0,75 l",
+    "price": 190.0,
+    "color": "bílé",
+    "variety": "Muškát moravský",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "polosladké",
+    "quality": "pozdní sběr"
   },
   {
     "sku": "HAN.0278",
@@ -1079,8 +1092,8 @@
     "quality": "moravské zemské"
   },
   {
-    "sku": "LAH.0555",
-    "catalogNumber": "L32925LA",
+    "sku": "LAH.0594",
+    "catalogNumber": "L03226LA",
     "name": "Prosecco - DOC Extra Dry",
     "package": "0,75 l",
     "price": 245.0,
@@ -1259,6 +1272,19 @@
     "brand": "ZNOVIN",
     "sugarType": "suché",
     "quality": "pozdní sběr"
+  },
+  {
+    "sku": "LAH.0590",
+    "catalogNumber": "4923LA",
+    "name": "Rulandské bílé - 2023 m.z.v. WAVE Dřevo",
+    "package": "0,75 l",
+    "price": 250.0,
+    "color": "bílé",
+    "variety": "Rulandské bílé",
+    "vintage": 2023,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "moravské zemské"
   },
   {
     "sku": "LAH.0569",
@@ -1583,6 +1609,19 @@
     "vintage": 2024,
     "brand": "LAHOFER",
     "sugarType": "polosuché",
+    "quality": "VOC"
+  },
+  {
+    "sku": "LAH.0582",
+    "catalogNumber": "5225LA",
+    "name": "Ryzlink rýnský - U Hájku 2025 VOC",
+    "package": "0,75 l",
+    "price": 205.0,
+    "color": "bílé",
+    "variety": "Ryzlink rýnský",
+    "vintage": 2025,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
     "quality": "VOC"
   },
   {
@@ -2312,6 +2351,19 @@
     "brand": "ZNOVIN",
     "sugarType": "suché",
     "quality": "jakostní víno"
+  },
+  {
+    "sku": "LAH.0589",
+    "catalogNumber": "9223LA",
+    "name": "Veltlínské zelené - 2023 m.z.v. WAVE Dřevo",
+    "package": "0,75 l",
+    "price": 250.0,
+    "color": "bílé",
+    "variety": "Veltlínské zelené",
+    "vintage": 2023,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "moravské zemské"
   },
   {
     "sku": "ZNO.0467",
