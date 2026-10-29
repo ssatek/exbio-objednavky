@@ -1742,6 +1742,19 @@
     "quality": "naturální víno"
   },
   {
+    "sku": "LAH.0472",
+    "catalogNumber": "6422LA",
+    "name": "Ryzlink vlašský - 2022 v.h. WAVE Beton",
+    "package": "0,75 l",
+    "price": 290.0,
+    "color": "bílé",
+    "variety": "Ryzlink vlašský",
+    "vintage": 2022,
+    "brand": "LAHOFER",
+    "sugarType": "suché",
+    "quality": "výběr z hroznů"
+  },
+  {
     "sku": "ZNO.0516",
     "catalogNumber": "5351",
     "name": "Ryzlink vlašský - Rosnička zelená",
@@ -1805,19 +1818,6 @@
     "brand": "LAHOFER",
     "sugarType": "brut",
     "quality": "jakostní šumivé"
-  },
-  {
-    "sku": "ZNO.0466",
-    "catalogNumber": "5321",
-    "name": "Sauvignon - Ještěrka zelená",
-    "package": "0,75 l",
-    "price": 180.0,
-    "color": "bílé",
-    "variety": "Sauvignon",
-    "vintage": 2025,
-    "brand": "ZNOVIN",
-    "sugarType": "suché",
-    "quality": "pozdní sběr"
   },
   {
     "sku": "ZNO.0408",
